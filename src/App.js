@@ -6,9 +6,8 @@ import HomePage from './components/HomePage';
 import Overview from './components/Overview';
 import Container from '@material-ui/core/Container';
 
-import { getAllProjectsInCategory, getProjectInfoMonthChart } from './services/dappradar';
+import { getAllProjectsInCategory } from './services/dappradar';
 import { getAllProjects } from './services/defipulse';
-import addMonthlyData from './services/testing';
 
 import normalization from './helpers/normalization.json';
 import DOTImpact from './helpers/DOTimpact.json';
