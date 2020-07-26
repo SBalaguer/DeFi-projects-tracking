@@ -1,0 +1,178 @@
+[
+  {
+    "defiPulse": "Maker",
+    "dappRadar": "makerdao"
+  },
+  {
+    "defiPulse": "Aave",
+    "dappRadar": "aave"
+  },
+  {
+    "defiPulse": "Compound",
+    "dappRadar": "compound"
+  },
+  {
+    "defiPulse": "Synthetix",
+    "dappRadar": "synthetix"
+  },
+  {
+    "defiPulse": "Curve Finance",
+    "dappRadar": "curve"
+  },
+  {
+    "defiPulse": "yearn.finance",
+    "dappRadar": null
+  },
+  {
+    "defiPulse": "InstaDApp",
+    "dappRadar": null
+  },
+  {
+    "defiPulse": "Balancer",
+    "dappRadar": "balancer"
+  },
+  {
+    "defiPulse": "WBTC",
+    "dappRadar": null
+  },
+  {
+    "defiPulse": "Uniswap",
+    "dappRadar": "uniswap"
+  },
+  { "defiPulse": "Flexa", "dappRadar": null },
+  { "defiPulse": "dYdX", "dappRadar": "dydx" },
+  {
+    "defiPulse": "mStable"
+  },
+  {
+    "defiPulse": "RenVM",
+    "dappRadar": "ren"
+  },
+  {
+    "defiPulse": "Bancor",
+    "dappRadar": null
+  },
+  { "defiPulse": "Set Protocol", "dappRadar": null },
+  {
+    "defiPulse": "MCDEX",
+    "dappRadar": null
+  },
+  {
+    "defiPulse": "Loopring",
+    "dappRadar": "loopring-exchange"
+  },
+  {
+    "defiPulse": "Nexus Mutual",
+    "dappRadar": null
+  },
+  {
+    "defiPulse": "Lightning Network",
+    "dappRadar": null
+  },
+  {
+    "defiPulse": "Kyber",
+    "dappRadar": "kyber"
+  },
+  {
+    "defiPulse": "Nuo Network",
+    "dappRadar": "nuo-network"
+  },
+  {
+    "defiPulse": "DeversiFi",
+    "dappRadar": null
+  },
+  {
+    "defiPulse": "DDEX",
+    "dappRadar": "ddex-margin"
+  },
+  {
+    "defiPulse": "dForce",
+    "dappRadar": "dforce-trade"
+  },
+  {
+    "defiPulse": "Erasure",
+    "dappRadar": null
+  },
+  {
+    "defiPulse": "Robo-Advisor for Yield",
+    "dappRadar": null
+  },
+  {
+    "defiPulse": "PieDAO",
+    "dappRadar": null
+  },
+  { "defiPulse": "Dharma", "dappRadar": null },
+  { "defiPulse": "Opyn", "dappRadar": null },
+  { "defiPulse": "Melon", "dappRadar": null },
+  { "defiPulse": "bZx", "dappRadar": null },
+  { "defiPulse": "Augur", "dappRadar": null },
+  { "defiPulse": "xDai", "dappRadar": null },
+  { "defiPulse": "Veil", "dappRadar": null },
+  { "defiPulse": "Connext", "dappRadar": null },
+  { "dappRadar": "1inch", "defiPulse": null },
+  { "dappRadar": "just", "defiPulse": null },
+  { "dappRadar": "oikos-cash", "defiPulse": null },
+  { "dappRadar": "vigor", "defiPulse": null },
+  { "dappRadar": "nest", "defiPulse": null },
+  { "dappRadar": "nexo-io", "defiPulse": null },
+  { "dappRadar": "defis-network", "defiPulse": null },
+  { "dappRadar": "zethyr-finance", "defiPulse": null },
+  { "dappRadar": "equilibrium-eosdt", "defiPulse": null },
+  { "dappRadar": "eos-microloan", "defiPulse": null },
+  { "dappRadar": "fulcrum", "defiPulse": null },
+  { "dappRadar": "furucombo", "defiPulse": null },
+  { "dappRadar": "dlease", "defiPulse": null },
+  { "dappRadar": "zapper-fi-formerly-defizap", "defiPulse": null },
+  { "dappRadar": "hegic", "defiPulse": null },
+  { "dappRadar": "mbn-global", "defiPulse": null },
+  { "dappRadar": "chintai", "defiPulse": null },
+  { "dappRadar": "defi-saver", "defiPulse": null },
+  { "dappRadar": "leverj", "defiPulse": null },
+  { "dappRadar": "idle-finance", "defiPulse": null },
+  { "dappRadar": "sparta", "defiPulse": null },
+  { "dappRadar": "fortube-bond", "defiPulse": null },
+  { "dappRadar": "flash-loans", "defiPulse": null },
+  { "dappRadar": "lendfme", "defiPulse": null },
+  { "dappRadar": "request-create", "defiPulse": null },
+  { "dappRadar": "deflast", "defiPulse": null },
+  { "dappRadar": "poloni-dex", "defiPulse": null },
+  { "dappRadar": "trontrade", "defiPulse": null },
+  { "dappRadar": "idex", "defiPulse": null },
+  { "dappRadar": "tokenlon", "defiPulse": null },
+  { "dappRadar": "neutrino-protocol", "defiPulse": null },
+  { "dappRadar": "localcryptos", "defiPulse": null },
+  { "dappRadar": "dex-ag", "defiPulse": null },
+  { "dappRadar": "forkdelta", "defiPulse": null },
+  { "dappRadar": "powerdefi", "defiPulse": null },
+  { "dappRadar": "ttswap", "defiPulse": null },
+  { "dappRadar": "switcheo-network", "defiPulse": null },
+  { "dappRadar": "matcha", "defiPulse": null },
+  { "dappRadar": "whaleex", "defiPulse": null },
+  { "dappRadar": "vexchange", "defiPulse": null },
+  { "dappRadar": "defibox", "defiPulse": null },
+  { "dappRadar": "voiddefi", "defiPulse": null },
+  { "dappRadar": "nash", "defiPulse": null },
+  { "dappRadar": "dex-blue", "defiPulse": null },
+  { "dappRadar": "paraswap-io", "defiPulse": null },
+  { "dappRadar": "gnosis-protocol", "defiPulse": null },
+  { "dappRadar": "wedex", "defiPulse": null },
+  { "dappRadar": "iost-dex", "defiPulse": null },
+  { "dappRadar": "tronatm", "defiPulse": null },
+  { "dappRadar": "zethyr-exchange", "defiPulse": null },
+  { "dappRadar": "pangu-trade", "defiPulse": null },
+  { "dappRadar": "otbtrade", "defiPulse": null },
+  { "dappRadar": "bitcratic", "defiPulse": null },
+  { "dappRadar": "newdex", "defiPulse": null },
+  { "dappRadar": "alcor-exchange", "defiPulse": null },
+  { "dappRadar": "singularx", "defiPulse": null },
+  { "dappRadar": "incognito-dex", "defiPulse": null },
+  { "dappRadar": "saturn-network", "defiPulse": null },
+  { "dappRadar": "wax-world", "defiPulse": null },
+  { "dappRadar": "ontology-dex-seed-exchange", "defiPulse": null },
+  { "dappRadar": "tronwatch-market", "defiPulse": null },
+  { "dappRadar": "jelly-swap", "defiPulse": null },
+  { "dappRadar": "cryptolocally", "defiPulse": null },
+  { "dappRadar": "uniswapex", "defiPulse": null },
+  { "dappRadar": "dubiex", "defiPulse": null },
+  { "dappRadar": "token-store-eth", "defiPulse": null }
+]

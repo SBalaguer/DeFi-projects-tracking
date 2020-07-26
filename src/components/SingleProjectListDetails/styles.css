@@ -1,0 +1,12 @@
+.description {
+  display: flex;
+  flex-direction: column;
+}
+
+.desciption-text {
+  margin-bottom: 0.8em;
+}
+
+.url {
+  font-size: 0.8em;
+}
