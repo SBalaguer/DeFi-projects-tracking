@@ -102,6 +102,7 @@ export class App extends Component {
         defiPulseName = value.defiPulse.name.toUpperCase();
         return defiPulseName.includes(searchQuery);
       }
+      return false;
     });
   };
 
