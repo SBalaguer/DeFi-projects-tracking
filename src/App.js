@@ -4,6 +4,7 @@ import './App.css';
 
 import HomePage from './components/HomePage';
 import Overview from './components/Overview';
+import Table from './components/Table';
 import Container from '@material-ui/core/Container';
 
 import { getAllProjectsInCategory } from './services/dappradar';
@@ -19,7 +20,8 @@ export class App extends Component {
       consolidatedData: [],
       dappRadarData: [],
       defiPulseProjects: [],
-      searchQuery: ''
+      searchQuery: '',
+      displayType: 'list'
     };
   }
 
@@ -89,6 +91,11 @@ export class App extends Component {
     this.setState({ searchQuery: value });
   };
 
+  onTypeChange = (event) => {
+    const value = event.target.value;
+    this.setState({ displayType: value });
+  };
+
   filterConsilidatedData = (data) => {
     return data.filter((value) => {
       const searchQuery = this.state.searchQuery.toUpperCase();
@@ -107,24 +114,32 @@ export class App extends Component {
   };
 
   render() {
-    const { consolidatedData, searchQuery } = this.state;
+    const { consolidatedData, searchQuery, displayType } = this.state;
+    const showList = displayType === 'list' ? true : false;
+
     return (
-      <Container
-        maxWidth="lg"
-        style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-around' }}
-      >
-        <Overview
-          DOTImpact={DOTImpact}
-          onSearchChange={this.onSearchChange}
-          searchQuery={searchQuery}
-          consolidatedData={consolidatedData}
-        />
-        <HomePage
-          DOTImpact={DOTImpact}
-          consolidatedData={this.filterConsilidatedData(consolidatedData)}
-          //consolidatedData={consolidatedData}
-        />
-      </Container>
+      <>
+        <Container
+          maxWidth="lg"
+          style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-around' }}
+        >
+          <Overview
+            DOTImpact={DOTImpact}
+            onSearchChange={this.onSearchChange}
+            searchQuery={searchQuery}
+            consolidatedData={consolidatedData}
+            onTypeChange={this.onTypeChange}
+            displayType={displayType}
+          />
+          {(showList && (
+            <HomePage
+              DOTImpact={DOTImpact}
+              consolidatedData={this.filterConsilidatedData(consolidatedData)}
+              //consolidatedData={consolidatedData}
+            />
+          )) || <Table consolidatedData={this.filterConsilidatedData(consolidatedData)} />}
+        </Container>
+      </>
     );
   }
 }

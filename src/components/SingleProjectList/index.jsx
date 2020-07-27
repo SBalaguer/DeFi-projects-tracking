@@ -21,10 +21,6 @@ export default function SingleProjectList(props) {
     DOTImpactValue = DOTImpact[defiPulse.name];
   }
 
-  if (!dappRadar && defiPulse) {
-    console.log(defiPulse);
-  }
-
   DOTImpactValue = DOTImpactValue === 1 ? null : DOTImpactValue;
 
   return (

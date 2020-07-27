@@ -7,7 +7,9 @@ export default (project) => {
     project.defiPulse &&
     project.defiPulse.value.tvl.USD.value > 0 &&
     project.dappRadar &&
-    project.dappRadar.totalVolumeLastWeekInUSD > 0
+    project.dappRadar.totalVolumeLastWeekInUSD > 0 &&
+    Number(project.dappRadar.weeklyUsers) > 0 &&
+    project.dappRadar.txLastWeek > 0
   ) {
     //the project has volume and tvl
     const volUsers =
@@ -20,8 +22,13 @@ export default (project) => {
       (0.3 * project.defiPulse.value.tvl.USD.value) / 1000 +
       0.1 * (volUsers + volTransact);
     const DOTImpactValue = DOTImpact[project.defiPulse.name];
-    return impact * DOTImpactValue;
-  } else if (project.dappRadar && project.dappRadar.volumeLastDay > 0) {
+    return !(impact * DOTImpactValue) ? 0 : impact * DOTImpactValue;
+  } else if (
+    project.dappRadar &&
+    project.dappRadar.totalVolumeLastWeekInUSD > 0 &&
+    Number(project.dappRadar.weeklyUsers) > 0 &&
+    project.dappRadar.txLastWeek > 0
+  ) {
     //the project has volume and no tvl
     //volume will be a proxy of tvl
     const volUsers =
@@ -34,7 +41,7 @@ export default (project) => {
       (0.3 * project.dappRadar.totalVolumeLastWeekInUSD) / 1000 +
       0.1 * (volUsers + volTransact);
     const DOTImpactValue = DOTImpact[project.dappRadar.slug];
-    return impact * DOTImpactValue;
+    return !(impact * DOTImpactValue) ? 0 : impact * DOTImpactValue;
   } else if (project.defiPulse && project.defiPulse.value.tvl.USD.value > 0) {
     //the project has tvl and no volume and no users and no txs
     //tvl will be a proxy of volume
@@ -50,7 +57,7 @@ export default (project) => {
       (0.3 * project.defiPulse.value.tvl.USD.value) / 1000 +
       0.1 * (volUsers + volTransact);
     const DOTImpactValue = DOTImpact[project.defiPulse.name];
-    return impact * DOTImpactValue;
+    return !(impact * DOTImpactValue) ? 0 : impact * DOTImpactValue;
   } else {
     return 0;
   }

@@ -3,6 +3,7 @@ import Paper from '@material-ui/core/Paper';
 import { Typography } from '@material-ui/core';
 import { Bubble } from 'react-chartjs-2';
 import TextField from '@material-ui/core/TextField';
+import { FormControl, InputLabel, Select } from '@material-ui/core';
 
 import './styles.css';
 
@@ -141,16 +142,37 @@ export class Overview extends Component {
             <Typography variant="subtitle2" style={{ marginBottom: '1em' }}>
               Search for a Project
             </Typography>
-            <form noValidate autoComplete="off">
-              <TextField
-                onChange={this.props.onSearchChange}
-                variant="outlined"
-                id="standard-basic"
-                name="project-name"
-                value={this.props.searchQuery}
-                label="Project Name"
-              />
-            </form>
+            <div
+              style={{
+                display: 'flex',
+                flexDirection: 'row',
+                width: '100%',
+                justifyContent: 'space-between'
+              }}
+            >
+              <form noValidate autoComplete="off">
+                <TextField
+                  onChange={this.props.onSearchChange}
+                  variant="outlined"
+                  id="standard-basic"
+                  name="project-name"
+                  value={this.props.searchQuery}
+                  label="Project Name"
+                />
+              </form>
+              <FormControl variant="outlined">
+                <InputLabel htmlFor="outlined-age-native-simple">Display</InputLabel>
+                <Select
+                  native
+                  value={this.props.displayType}
+                  onChange={this.props.onTypeChange}
+                  label="Display Type"
+                >
+                  <option value="list">List</option>
+                  <option value="table">Table</option>
+                </Select>
+              </FormControl>
+            </div>
           </div>
         </div>
       </Paper>
